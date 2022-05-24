@@ -1,7 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Filters = () => {
     const [selectedTag, setSelectedTag] = useState("all")
+
+    // useEffect(() => {
+    //     console.log("document ready!");
+    // }, [])
+
+    // useEffect(() => {
+    //     console.log("selectedTag изменился");
+    // }, [selectedTag])
 
     return (
         <div className='container mt-3 mb-3 d-flex justify-content-between'>
